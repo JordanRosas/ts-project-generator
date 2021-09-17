@@ -1,0 +1,25 @@
+{
+  "name": "project-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc && shx rm -rf dist/templates && shx cp -r src/templates dist/src"
+  },
+  "bin": {
+    "orq-template-engine": "./dist/src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/inquirer": "^8.1.1",
+    "@types/node": "^16.9.2",
+    "inquirer": "^8.1.5",
+    "nodemon": "^2.0.12",
+    "shx": "^0.3.3",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
